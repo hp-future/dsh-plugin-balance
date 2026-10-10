@@ -1,0 +1,7 @@
+# Keep the published and committed bytes identical: this package is plain
+# JavaScript consumed by Node, and a CRLF checkout would ship different bytes
+# than the repository holds.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.tgz binary

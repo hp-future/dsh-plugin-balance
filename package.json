@@ -1,0 +1,57 @@
+{
+  "name": "@hp-future/dsh-plugin-balance",
+  "version": "1.0.0",
+  "description": "DeepSeek account balance pill in the dsh composer status row.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "balance",
+    "cordis"
+  ],
+  "homepage": "https://github.com/hp-future/dsh-plugin-balance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hp-future/dsh-plugin-balance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hp-future/dsh-plugin-balance/issues"
+  },
+  "author": "hp-future",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "^0.2.0-rc.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": false,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

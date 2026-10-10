@@ -1,0 +1,8 @@
+node_modules/
+*.tgz
+*.tar.gz
+package-lock.json
+pnpm-lock.yaml
+.pnpm-store/
+.DS_Store
+Thumbs.db

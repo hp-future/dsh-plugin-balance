@@ -1,0 +1,3 @@
+- insert:
+    - id: balance
+      name: '@hp-future/dsh-plugin-balance'

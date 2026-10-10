@@ -1,0 +1,31 @@
+name: publish
+
+# Publishes to npm when a GitHub Release is published. Requires npm Trusted
+# Publishing (OIDC) to be configured for this package on npmjs.com — no token
+# secret is stored in this repository.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+
+      - name: Show what will be published
+        run: npm pack --dry-run
+
+      - name: Publish
+        run: npm publish
