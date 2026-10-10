@@ -1,6 +1,6 @@
 # dsh-plugin-balance
 
-[English](README.md) | 中文 | [npm](https://www.npmjs.com/package/@hp-future/dsh-plugin-balance)
+[English](../README.md) | 中文 | [npm](https://www.npmjs.com/package/@hp-future/dsh-plugin-balance)
 
 在 dsh 输入框状态栏显示 DeepSeek 账户余额，与 token、缓存两个胶囊并排。
 

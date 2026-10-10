@@ -32,7 +32,6 @@
     "icon.svg",
     "locale/*.json",
     "README.md",
-    "README.zh.md",
     "CHANGELOG.md",
     "LICENSE"
   ],

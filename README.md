@@ -1,6 +1,6 @@
 # dsh-plugin-balance
 
-English | [中文](README.zh.md) | [npm](https://www.npmjs.com/package/@hp-future/dsh-plugin-balance)
+English | [中文](docs/README.zh-CN.md) | [npm](https://www.npmjs.com/package/@hp-future/dsh-plugin-balance)
 
 Shows your DeepSeek account balance in the dsh composer status row, next to the token and cache pills.
 
