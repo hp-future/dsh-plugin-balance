@@ -169,8 +169,7 @@ window.__ModuleLoader__.load({
           return () => style.remove()
         }, 'balance: styles')
 
-        // Registration outcome, kept local: a support report can quote the
-        // console, and no global is left behind for a page to trip over.
+        // Registration outcome: how a support report reads which path won.
         const outcome = { registered: false, attempts: 0 }
         ctx.slots.onEntryError((key, registration, error, info) => {
           console.error('[balance] slot entry error in', key, error, info?.abdicated === true ? '(abdicated)' : '')
