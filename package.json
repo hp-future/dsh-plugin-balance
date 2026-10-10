@@ -1,6 +1,6 @@
 {
   "name": "@hp-future/dsh-plugin-balance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DeepSeek account balance pill in the dsh composer status row.",
   "keywords": [
     "dsh",
@@ -43,7 +43,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": false,
